@@ -1,0 +1,4 @@
+node {
+    stage ("cloning"){git 'https://github.com/Thallem/SKRLogin.git'}
+    stage ("build") {sh 'mvn clean install'}
+}
